@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arithmetics</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container" id="arithmetics-page">
+        <h1>Arithmetics</h1>
+
+        <div class="section">
+            <h2>Addition</h2>
+            <input type="text" id="add-number1" placeholder="Enter first number">
+            <input type="text" id="add-number2" placeholder="Enter second number">
+            <button onclick="performAddition()">Add</button>
+            <p id="add-result">Result: </p>
+        </div>
+
+        <div class="section">
+            <h2>Subtraction</h2>
+            <input type="text" id="sub-number1" placeholder="Enter first number">
+            <input type="text" id="sub-number2" placeholder="Enter second number">
+            <button onclick="performSubtraction()">Subtract</button>
+            <p id="sub-result">Result: </p>
+        </div>
+
+        <div class="section">
+            <h2>Multiplication</h2>
+            <input type="text" id="mul-number1" placeholder="Enter first number">
+            <input type="text" id="mul-number2" placeholder="Enter second number">
+            <button onclick="performMultiplication()">Multiply</button>
+            <p id="mul-result">Result: </p>
+        </div>
+
+        <div class="section">
+            <h2>Division</h2>
+            <input type="text" id="div-number1" placeholder="Enter first number">
+            <input type="text" id="div-number2" placeholder="Enter second number">
+            <button onclick="performDivision()">Divide</button>
+            <p id="div-result">Result: </p>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>

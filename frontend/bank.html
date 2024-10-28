@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container" id="bank-page">
+        <h1>Bank</h1>
+        <!-- Signing In -->
+        <div class="section" id="sign-in-section">
+            <h2>Sign In</h2>
+            <input type="text" id="signin-name" placeholder="Enter your name">
+            <button onclick="signIn()">Sign In</button>
+            <div class="result-box">
+                <p id="signin-result">회원가입</p>
+            </div>
+        </div>
+
+        <!-- Get Current Balance -->
+        <div class="section" id="get-balance-section">
+            <h2>Get Balance</h2>
+            <input type="text" id="balance-user-id" placeholder="Enter user ID">
+            <input type="text" id="balance-name" placeholder="Enter your name">
+            <button onclick="getBalance()">Get Balance</button>
+            <div class="result-box">
+                <p id="balance-result">현재 잔액</p>
+            </div>
+        </div>
+
+        <!-- Add Money -->
+        <div class="section" id="add-money-section">
+            <h2>Add Money</h2>
+            <input type="text" id="add-money-user-id" placeholder="Enter user ID">
+            <input type="text" id="add-money-name" placeholder="Enter your name">
+            <input type="text" id="add-amount" placeholder="Enter amount to add">
+            <button onclick="addMoney()">Add Money</button>
+            <div class="result-box">
+                <p id="add-money-result">예금</p>
+            </div>
+        </div>
+
+        <!-- Withdraw Money -->
+        <div class="section" id="withdraw-money-section">
+            <h2>Withdraw Money</h2>
+            <input type="text" id="withdraw-user-id" placeholder="Enter user ID">
+            <input type="text" id="withdraw-name" placeholder="Enter your name">
+            <input type="text" id="withdraw-amount" placeholder="Enter amount to withdraw">
+            <button onclick="withdrawMoney()">Withdraw Money</button>
+            <div class="result-box">
+                <p id="withdraw-result">인출</p>
+            </div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
